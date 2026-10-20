@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dapur Nusantara – Resep Masakan Indonesia</title>
+<meta name="description" content="Resep rendang, soto, kupat tahu, bakwan, dan mendoan lengkap dengan bahan dan langkah.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231d2744'/><g fill='none' stroke='%23e4b955' stroke-width='5'><ellipse cx='50' cy='30' rx='11' ry='20'/><ellipse cx='50' cy='70' rx='11' ry='20'/><ellipse cx='30' cy='50' rx='20' ry='11'/><ellipse cx='70' cy='50' rx='20' ry='11'/></g></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,800;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="pintu kiri"></div><div class="pintu kanan"></div>
+  <div class="intro-in">
+    <svg class="lambang" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+      <ellipse pathLength="1" cx="40" cy="21" rx="9" ry="17" style="--k:0"/><ellipse pathLength="1" cx="59" cy="40" rx="17" ry="9" style="--k:1"/>
+      <ellipse pathLength="1" cx="40" cy="59" rx="9" ry="17" style="--k:2"/><ellipse pathLength="1" cx="21" cy="40" rx="17" ry="9" style="--k:3"/>
+      <circle class="titik" cx="40" cy="40" r="2.6" fill="currentColor" stroke="none"/>
+    </svg>
+    <div class="intro-nama" id="introNama"></div>
+    <p class="intro-sub">Resep Masakan Indonesia</p>
+  </div>
+</div>
+
+<header class="bar">
+  <a class="brand" href="#/home">Dapur Nusantara</a>
+</header>
+
+<button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuList" aria-label="Buka menu"><span></span><span></span><span></span></button>
+<nav class="menu-list" id="menuList" aria-label="Menu utama">
+  <a href="#/info" data-page="info" style="--i:0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.8" r=".6" fill="currentColor"/></svg></span><span class="tx">Info</span></a>
+  <a href="#/home" data-page="home" style="--i:1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h4v-5h4v5h4v-9"/></svg></span><span class="tx">Home</span></a>
+  <a href="#/anggota" data-page="anggota" style="--i:2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><path d="M16 5.2a3.2 3.2 0 010 5.6"/><path d="M18 14c1.8.7 3 2.3 3 5"/></svg></span><span class="tx">Anggota Kelompok</span></a>
+  <a href="#/resep" data-page="resep" style="--i:3"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.5-5-2-8-1.5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5v-13C17 4 14 4.5 12 6z"/><path d="M12 6v13"/></svg></span><span class="tx">List Resep</span></a>
+</nav>
+
+<!-- Halaman: Home -->
+<section class="page" data-page="home" id="home">
+  <div class="hero">
+    <div class="hero-body">
+      <p class="hero-note">Warisan rasa dari dapur ibu</p>
+      <h1>Resep Masakan Indonesia, Turun-Temurun</h1>
+      <p class="hero-sub">Dari rendang Minang yang berjam-jam dimasak hingga mendoan Banyumas yang setengah matang. Bahan jelas, langkah runtut.</p>
+      <a class="btn btn-gold" href="#/resep">Mulai Memasak</a>
+    </div>
+    <div class="wave" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- Halaman: Info -->
+<section class="page" data-page="info" id="info" hidden>
+  <div class="wrap info">
+    <h2 class="title">Tentang Dapur Nusantara</h2>
+    <p>Dapur Nusantara adalah kumpulan resep masakan Indonesia yang disusun oleh kelompok kami. Setiap resep memuat bahan yang bisa dicentang saat belanja, langkah memasak yang berurutan, dan tips dari dapur.</p>
+    <p>Saat ini tersedia lima resep: rendang, soto ayam, kupat tahu, bakwan sayur, dan tempe mendoan. Resep lain akan kami tambahkan.</p>
+  </div>
+</section>
+
+<!-- Halaman: Resep -->
+<section class="page" data-page="resep" id="resep" hidden>
+  <main class="wrap">
+    <h2 class="title">Pilih Resep</h2>
+    <div class="tools">
+      <input id="cari" type="search" placeholder="Cari resep, misalnya soto…" aria-label="Cari resep">
+      <div class="chips" id="chips" role="group" aria-label="Kategori"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="kosong" hidden>Resep tidak ditemukan. Coba kata kunci lain atau pilih kategori Semua.</p>
+  </main>
+</section>
+
+<!-- Halaman: Anggota (isi diedit di data.js) -->
+<section class="page" data-page="anggota" id="anggota" hidden>
+  <div class="wrap">
+    <h2 class="title">Anggota Kelompok</h2>
+    <div class="a-grid" id="aGrid"></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <p>Dibuat dengan cinta untuk masakan Nusantara.</p>
+  <p class="small">Takaran bisa disesuaikan dengan selera keluarga.</p>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-judul" hidden>
+  <div class="sheet">
+    <button class="close" id="tutup" aria-label="Tutup resep">&times;</button>
+    <div id="m-isi"></div>
+  </div>
+</div>
+
+<button class="btn-top" id="naik" aria-label="Kembali ke atas">&uarr;</button>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
